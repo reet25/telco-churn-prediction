@@ -202,9 +202,9 @@ with left:
     )
 
     senior=st.selectbox(
-        "Senior Citizen",
-        [0,1]
-    )
+    "Senior Citizen",
+    ["No","Yes"]
+)
 
     partner=st.selectbox(
         "Partner",
