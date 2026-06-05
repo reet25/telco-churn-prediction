@@ -327,7 +327,7 @@ Users can:
 
 ## Example Prediction
 
-![Prediction Example](low-risk-prediction.png.png)
+![Prediction Example](images/low-risk-prediction.png.png)
 
 ---
 
