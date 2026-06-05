@@ -315,15 +315,21 @@ Users can:
 
 ---
 
+## Live App:
+
+[Open Streamlit App]([YOUR_LINK](https://telco-churn-prediction-eeux5fv75ddwt4hqklgrem.streamlit.app/))
+
+---
+
 ## Streamlit Application UI
 
-![Streamlit UI](images/streamlit_ui.png)
+![Streamlit UI](images/streamlit-home.png.png)
 
 ---
 
 ## Example Prediction
 
-![Prediction Example](images/prediction_example.png)
+![Prediction Example](low-risk-prediction.png.png)
 
 ---
 
