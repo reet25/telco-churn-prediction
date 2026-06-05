@@ -4,7 +4,7 @@
 
 - **Best Model:** L1 Regularized Class-Weighted Logistic Regression
 - **Best Recall Score:** 0.818 (Churn Class)
-- **Best ROC AUC Score:** 0.836
+- **Best Selected Model ROC AUC Score:** 0.836
 - **Cross Validation:** Stratified 5-Fold Cross Validation
 - **Deployment:** Streamlit Web Application
 - **Primary Focus:** Classification, Imbalanced Learning, Feature Engineering, Recall Optimization
@@ -341,49 +341,30 @@ Users can:
 
 # Project Structure
 
+## Project Structure
+
 ```text
 telco-churn-prediction/
-
 │
-
 ├── app.py
-
 ├── README.md
-
 ├── requirements.txt
-
-├── images/
-
-│   ├── churn_distribution.png
-
-│   ├── contract_vs_churn.png
-
-│   ├── tenure_boxplot.png
-
-│   ├── confusion_matrix.png
-
-│   ├── roc_curve_comparison.png
-
-│   ├── precision_recall_curve.png
-
-│   ├── feature_importance.png
-
-│   ├── streamlit_ui.png
-
-│   └── prediction_example.png
-
+├── model.pkl
+├── scaler.pkl
+├── columns.pkl
 │
-
-├── notebooks/
-
-│   ├── churn_prediction.ipynb
-
-│   ├── model.pkl
-
-│   ├── scaler.pkl
-
-│   └── columns.pkl
-
+├── images/
+│   ├── contract_vs_churn.png
+│   ├── tenure_boxplot.png
+│   ├── confusion_matrix.png
+│   ├── roc_curve_comparison.png
+│   ├── precision_recall_curve.png
+│   ├── feature_importance.png
+│   ├── streamlit_ui.png
+│   └── prediction_example.png
+│
+└── notebooks/
+    └── churn_prediction.ipynb
 ```
 
 ---
@@ -406,7 +387,7 @@ telco-churn-prediction/
 - Add SHAP Explainability
 - Experiment with Gradient Boosting Models
 - Automated Hyperparameter Optimization
-- Production-grade deployment
+- Improve deployment robustness
 
 ---
 
