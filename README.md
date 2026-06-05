@@ -8,7 +8,7 @@
 - **Cross Validation:** Stratified 5-Fold Cross Validation
 - **Deployment:** Streamlit Web Application
 - **Primary Focus:** Classification, Imbalanced Learning, Feature Engineering, Recall Optimization
-- **Live App:** [Open Streamlit App]([YOUR_LINK](https://telco-churn-prediction-eeux5fv75ddwt4hqklgrem.streamlit.app/))
+- **Live App:** [Open Streamlit App](https://telco-churn-prediction-eeux5fv75ddwt4hqklgrem.streamlit.app/)
 
 ---
 
