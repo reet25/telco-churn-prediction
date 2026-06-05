@@ -368,46 +368,44 @@ if st.button("Predict Churn Risk"):
 
         st.markdown(
 
-        f"""
+f"""
 
-        <div class='pred-box'
+<div class='pred-box'
+style='background:#fee2e2;color:#991b1b;'>
 
-        style='background:#fee2e2;color:#991b1b'>
+⚠ HIGH CHURN RISK
 
-        ⚠ HIGH CHURN RISK
+<br><br>
 
-        <br><br>
+Probability: {probability:.2%}
 
-        Probability: {probability:.2%}
+</div>
 
-        </div>
+""",
 
-        """,
+unsafe_allow_html=True
 
-        unsafe_allow_html=True
-
-        )
+)
 
     else:
 
         st.markdown(
 
-        f"""
+f"""
 
-        <div class='pred-box'
+<div class='pred-box'
+style='background:#dcfce7;color:#14532d;'>
 
-        style='background:#dcfce7;color:#14532d'>
+✓ LOW CHURN RISK
 
-        ✓ LOW CHURN RISK
+<br><br>
 
-        <br><br>
+Probability: {probability:.2%}
 
-        Probability: {probability:.2%}
+</div>
 
-        </div>
+""",
 
-        """,
+unsafe_allow_html=True
 
-        unsafe_allow_html=True
-
-        )
+)
