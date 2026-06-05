@@ -75,17 +75,18 @@ EDA was performed to understand customer behavior patterns and identify factors 
 
 ---
 
-## Churn Distribution
+The target variable showed class imbalance, which motivated the use of:
 
-![Churn Distribution](images/churn_distribution.png)
-
-The dataset contains moderate class imbalance, motivating recall-focused modeling.
+- Class weighting
+- Recall optimization
+- Threshold tuning
+- Stratified cross validation
 
 ---
 
 ## Contract Type vs Churn
 
-![Contract vs Churn](images/contract_vs_churn.png)
+![Contract vs Churn](images/contract_churn.png)
 
 Month-to-month contracts showed substantially higher churn compared to yearly contracts.
 
