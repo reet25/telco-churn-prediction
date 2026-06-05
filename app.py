@@ -409,3 +409,7 @@ Probability: {probability:.2%}
 unsafe_allow_html=True
 
 )
+st.markdown("---")
+st.caption(
+"Built using Logistic Regression + Feature Engineering + Streamlit | IBM Telco Dataset"
+)
