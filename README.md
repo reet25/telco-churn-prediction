@@ -230,7 +230,7 @@ The model successfully captured most churn customers while maintaining manageabl
 
 ## ROC Curve Comparison
 
-![ROC Curve](images/roc_curve_comparison.png)
+![ROC Curve](images/roc_curve.png)
 
 Observations:
 
@@ -242,7 +242,7 @@ Observations:
 
 ## Precision Recall Curve
 
-![PR Curve](images/precision_recall_curve.png)
+![PR Curve](images/pr_curve.png)
 
 Observations:
 
@@ -261,8 +261,6 @@ Most influential churn factors:
 - Contract Type
 - Customer Tenure
 - Tech Support Availability
-
-![Feature Importance](images/feature_importance.png)
 
 L1 Regularization additionally removed weak features automatically.
 
