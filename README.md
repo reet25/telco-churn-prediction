@@ -25,16 +25,17 @@ The primary objective was not only maximizing predictive performance but buildin
 
 The project implements a complete end-to-end classification workflow:
 
-- Exploratory Data Analysis (EDA)
-- Data Cleaning
-- Feature Engineering
-- Imbalanced Learning
-- Model Training & Comparison
-- Threshold Optimization
-- Cross Validation
-- Hyperparameter Tuning
-- Model Interpretation
-- Streamlit Deployment
+* Exploratory Data Analysis (EDA)
+* Data Cleaning
+* Feature Engineering
+* Pipeline-Based Preprocessing
+* Imbalanced Learning
+* Model Training & Comparison
+* Threshold Optimization
+* Stratified Cross Validation
+* Hyperparameter Tuning
+* Model Interpretation
+* Streamlit Deployment
 
 ---
 
@@ -101,21 +102,29 @@ Customers with lower tenure exhibited significantly higher churn behavior.
 
 ---
 
-# Data Preprocessing
+## Data Preprocessing
 
-Preprocessing Steps:
+Preprocessing was implemented using a Scikit-learn `ColumnTransformer` and `Pipeline` to ensure consistent transformations during training, validation, and inference.
 
-- Removed customerID column
-- Converted TotalCharges into numeric format
-- Handled missing values
-- One-Hot Encoding for categorical variables
-- Stratified Train-Test Split
-- Feature Scaling using StandardScaler
+### Preprocessing Steps
 
-Train-Test Split:
+* Removed `customerID`
+* Converted `TotalCharges` to numeric format
+* Handled missing values
+* Applied feature engineering
+* Standardized numerical features using `StandardScaler`
+* One-hot encoded categorical features using `OneHotEncoder(handle_unknown='ignore')`
+* Combined preprocessing and model training into a single reusable Pipeline
+* Used Stratified Train-Test Split for reliable evaluation
 
-- Training Data: 80%
-- Testing Data: 20%
+### Why Pipeline + ColumnTransformer?
+
+Using a unified workflow ensures:
+
+* Consistent preprocessing across training and prediction
+* Reduced risk of preprocessing mistakes
+* Cleaner experimentation and model comparison
+* Deployment-ready inference on raw customer data
 
 ---
 
@@ -381,13 +390,14 @@ telco-churn-prediction/
 
 ---
 
-# Future Improvements
+## Future Improvements
 
-- Implement sklearn Pipelines
-- Add SHAP Explainability
-- Experiment with Gradient Boosting Models
-- Automated Hyperparameter Optimization
-- Improve deployment robustness
+* Add SHAP-based model explainability
+* Experiment with Gradient Boosting models (XGBoost, LightGBM, CatBoost)
+* Automate hyperparameter optimization using Optuna
+* Build an API using FastAPI
+* Add model monitoring and prediction logging
+* Improve deployment robustness and scalability
 
 ---
 
